@@ -152,13 +152,18 @@
             margin-bottom: 30px;
         }
 
-        form {
-            max-width: 600px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
+        <form action="https://formspree.io/f/mdarygjy" method="POST">
+  <label>Your Name:</label>
+  <input type="text" name="name" required>
+
+  <label>Your Email:</label>
+  <input type="email" name="email" required>
+
+  <label>Message:</label>
+  <textarea name="message" required></textarea>
+
+  <button type="submit">Send</button>
+</form>
 
         input, textarea {
             padding: 15px;
