@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MK Soni & Company | Tax & Corporate Consultants</title>
+    <style>
+        :root {
+            --primary: #0a1d37; /* Deep Trust Blue */
+            --secondary: #c5a880; /* Professional Gold/Brass */
+            --light: #f4f6f9;
+            --dark: #222831;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 1.2rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid var(--secondary);
+        }
+
+        .logo {
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: white;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--secondary);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--secondary);
+        }
+
+        .hero {
+            background: linear-gradient(rgba(10, 29, 55, 0.85), rgba(10, 29, 55, 0.9)), url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+            color: white;
+            padding: 120px 5%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+            color: #e0e0e0;
+        }
+
+        .btn {
+            background-color: var(--secondary);
+            color: var(--primary);
+            padding: 14px 35px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(197, 168, 128, 0.3);
+        }
+
+        .btn:hover {
+            background-color: white;
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        .services {
+            padding: 80px 5%;
+            background-color: var(--light);
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 40px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 35px 25px;
+            border-radius: 6px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--secondary);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .about {
+            padding: 80px 5%;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .contact {
+            padding: 80px 5%;
+            background-color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 30px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, textarea {
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        footer {
+            background-color: var(--primary);
+            color: #a0a0a0;
+            text-align: center;
+            padding: 25px;
+            font-size: 0.9rem;
+            border-top: 1px solid #1a3152;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">MK SONI <span>& CO.</span></div>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Smart Compliance. Seamless Growth.</h1>
+        <p>Expert Income Tax, GST, and Business Registration solutions handled by a dedicated accounting professional.</p>
+        <a href="#contact" class="btn">Book a Free Consultation</a>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Core Expertise</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Income Tax Return</h3>
+                <p>Accurate filing, tax planning, and timely submission for individuals, partners, and corporate entities.</p>
+            </div>
+            <div class="service-card">
+                <h3>GST Registration & Returns</h3>
+                <p>End-to-end GST compliance including new registrations, monthly/quarterly return filings, and reconciliation.</p>
+            </div>
+            <div class="service-card">
+                <h3>Company Registration</h3>
+                <p>Seamless incorporation services for Private Limited Companies, LLPs, OPCs, and Partnership firms.</p>
+            </div>
+            <div class="service-card">
+                <h3>End-to-End Accounting</h3>
+                <p>Professional bookkeeping, financial statements preparation, and financial analysis to track business growth.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About the Consultant</h2>
+        <p>Led by an <strong>M.Com graduate and Chartered Accountant (CA) Finalist</strong>, MK Soni & Company bridges the gap between complex legal compliance and your business goals. We provide transparent, accurate, and highly efficient financial consulting to help you focus entirely on scaling your business.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <p>Have questions about your taxes or business registration? Drop us a message.</p>
+        <form action="#" method="POST">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email Address" required>
+            <input type="text" placeholder="Phone Number" required>
+            <textarea rows="5" placeholder="Briefly describe your requirements (e.g., GST Registration, ITR Filing)" required></textarea>
+            <button type="submit" class="btn" style="border:none; cursor:pointer; width: 100%;">Submit Inquiry</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 MK Soni & Company. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
